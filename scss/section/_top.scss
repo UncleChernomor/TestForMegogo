@@ -1,0 +1,40 @@
+#top {
+    background:
+        linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url('./img/background-top.jpg') no-repeat center center;
+    background-size: cover;
+
+    section,
+    nav {
+        position: relative;
+        z-index: 2;
+    }
+
+    .info {
+        flex: 1 1 auto;
+    }
+
+    .info>.wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .info h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .info p {
+        margin: 10px 0 0 0;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .top-chevron {
+        padding: 25px 0;
+        text-align: center;
+    }
+}

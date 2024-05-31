@@ -1,0 +1,43 @@
+.main-nav {
+    padding: 15px;
+    
+    .burger {
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        width: 16px;
+        height: 14px;
+
+        &>.burger-line {
+            position: absolute;
+            margin: 5px 0 5px;
+            border: 1px solid $color-primary;
+            height: 2px;
+            top: calc(50% - 6px);
+            left: 0;
+            right: 0;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            border: 1px solid $color-primary;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            border: 1px solid $color-primary;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}

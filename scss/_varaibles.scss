@@ -1,0 +1,9 @@
+@mixin base-font() {
+    font-family: "SF UI Display", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+$color-primary: #FFF;
+$bg-primary: #101010;
+$color-tiffany: #23C3B2;

@@ -1,0 +1,80 @@
+#prepayment-optimal {
+    border: 8px solid $color-tiffany;
+    background: 
+        linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+        url('./img/background-prepayment-optimal.jpg') no-repeat center;
+    background-size: cover;
+
+    .wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .prepayment-optimal-info-main {
+        margin: 109px 0 0 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex: 1 1 100%;
+        height: 100%;
+    }
+
+    .prepayment-optimal-info-secondary {
+        margin: 36px 0 0 0;
+
+        p.text {
+            opacity: 0.8;
+        }
+
+        .title-small {
+            margin: 5px 0 0 0;
+            line-height: 1.25;
+        }
+    }
+
+    .prepayment-optimal-links {
+        margin: 40px 0 70px;
+
+        .price {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 125%;
+            letter-spacing: 0.04em;
+            text-transform: lowercase;
+            opacity: 1;
+        }
+
+        .btn {
+            margin: 16px 0 0 0;
+        }
+
+        p:nth-child(n + 2) {
+            margin: 10px 0 0 0;
+            font-size: 12px;
+            letter-spacing: 0.07em;
+            text-transform: capitalize;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        a {
+            display: block;
+            margin: 20px 0 0 0;
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #e5e5e5;
+        }
+    }
+
+    
+    p.text {
+        margin: 10px 0 0 0;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+        opacity: 1;
+        font-weight: 400;
+    }
+}

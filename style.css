@@ -1,0 +1,386 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+#top {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./img/background-top.jpg") no-repeat center center;
+  background-size: cover;
+}
+#top section,
+#top nav {
+  position: relative;
+  z-index: 2;
+}
+#top .info {
+  flex: 1 1 auto;
+}
+#top .info > .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#top .info h2 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+#top .info p {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  line-height: 1.25;
+}
+#top .top-chevron {
+  padding: 25px 0;
+  text-align: center;
+}
+
+#without-inet {
+  background-color: transparent;
+}
+#without-inet .info {
+  margin: 80px 0 0 0;
+}
+#without-inet .info p {
+  margin: 15px 0 0 0;
+}
+#without-inet .phone-main {
+  margin: 30px 0 0 0;
+  flex: 1 1 70%;
+  max-height: 450px;
+  background: linear-gradient(to top, #101010, rgba(255, 255, 255, 0)), url("./img/iPhone.png") no-repeat center bottom;
+}
+
+#prepayment-optimal {
+  border: 8px solid #23C3B2;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("./img/background-prepayment-optimal.jpg") no-repeat center;
+  background-size: cover;
+}
+#prepayment-optimal .wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#prepayment-optimal .prepayment-optimal-info-main {
+  margin: 109px 0 0 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1 1 100%;
+  height: 100%;
+}
+#prepayment-optimal .prepayment-optimal-info-secondary {
+  margin: 36px 0 0 0;
+}
+#prepayment-optimal .prepayment-optimal-info-secondary p.text {
+  opacity: 0.8;
+}
+#prepayment-optimal .prepayment-optimal-info-secondary .title-small {
+  margin: 5px 0 0 0;
+  line-height: 1.25;
+}
+#prepayment-optimal .prepayment-optimal-links {
+  margin: 40px 0 70px;
+}
+#prepayment-optimal .prepayment-optimal-links .price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  opacity: 1;
+}
+#prepayment-optimal .prepayment-optimal-links .btn {
+  margin: 16px 0 0 0;
+}
+#prepayment-optimal .prepayment-optimal-links p:nth-child(n+2) {
+  margin: 10px 0 0 0;
+  font-size: 12px;
+  letter-spacing: 0.07em;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.6);
+}
+#prepayment-optimal .prepayment-optimal-links a {
+  display: block;
+  margin: 20px 0 0 0;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #e5e5e5;
+}
+#prepayment-optimal p.text {
+  margin: 10px 0 0 0;
+  line-height: 140%;
+  letter-spacing: 0.03em;
+  opacity: 1;
+  font-weight: 400;
+}
+
+#gift-partners .wrapper {
+  padding: 0 15px 0 50px;
+}
+#gift-partners .wrapper:has(.partners-labels) {
+  padding: 0 35px;
+}
+#gift-partners .partners-labels {
+  margin: 30px 0 0 0;
+}
+#gift-partners .text {
+  margin: 15px 0 0 0;
+  font-size: 15px;
+  line-height: 133%;
+}
+
+#down .condintions {
+  margin: 30px 0 0 0;
+}
+#down .btn {
+  margin: 52px 0 0 0;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+
+.btn {
+  min-width: 220px;
+  max-height: 55px;
+  padding: 21px 49px;
+  border-radius: 5px;
+  background-color: #23C3B2;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-nav {
+  padding: 15px;
+}
+.main-nav .burger {
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  width: 16px;
+  height: 14px;
+}
+.main-nav .burger > .burger-line {
+  position: absolute;
+  margin: 5px 0 5px;
+  border: 1px solid #FFF;
+  height: 2px;
+  top: calc(50% - 6px);
+  left: 0;
+  right: 0;
+}
+.main-nav .burger::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 1px solid #FFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.main-nav .burger::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 1px solid #FFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.item-label {
+  padding: 5px;
+  border-radius: 3px;
+  position: absolute;
+  top: 5px;
+  right: -3px;
+  z-index: 1;
+  background-color: #FFF;
+  color: #101010;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.1;
+}
+
+.partners-labels {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  position: relative;
+}
+.partners-labels::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  pointer-events: none;
+  z-index: 2;
+}
+
+.partners-labels-item {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* Это создает квадратные ячейки */
+}
+
+.partners-labels-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* Это заставляет картинку занимать всю площадь ячейки */
+}
+
+.condintions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 1fr));
+  row-gap: 40px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.condintions .conditions-item h4 {
+  font-size: 20px;
+}
+.condintions .conditions-item p {
+  font-size: 15px;
+  opacity: 1;
+}
+
+body {
+  font-family: "SF UI Display", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFF;
+  background-color: #101010;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+a {
+  color: #FFF;
+}
+
+.container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.base-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  scroll-snap-align: start;
+}
+
+.wrapper {
+  padding: 0 25px 0 50px;
+}
+
+.title-big {
+  font-size: 36px;
+  line-height: 140%;
+}
+
+.title-small {
+  font-size: 24px;
+  line-height: 117%;
+}
+
+.text {
+  opacity: 0.8;
+}
+
+.text-small {
+  font-size: 15px;
+  line-height: 133%;
+}/*# sourceMappingURL=style.css.map */

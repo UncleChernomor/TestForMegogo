@@ -1,0 +1,17 @@
+.condintions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    row-gap: 40px;
+    column-gap: 20px;
+
+    .conditions-item {
+        h4 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.item-label {
+    padding: 5px;
+    border-radius: 3px;
+    position: absolute;
+    top: 5px;
+    right: -3px;
+    z-index: 1;
+
+
+    background-color: $color-primary;
+    color: #101010;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.1;
+}

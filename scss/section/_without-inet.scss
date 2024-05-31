@@ -1,0 +1,20 @@
+#without-inet {
+    background-color:transparent;
+
+    .info {
+        margin: 80px 0 0 0;
+
+        p {
+            margin: 15px 0 0 0;
+        }
+    }
+
+    .phone-main {
+        margin: 30px 0 0 0;
+        flex: 1 1 70%;
+        max-height: 450px;
+        background:
+         linear-gradient(to top, $bg-primary, rgba(255, 255, 255, 0)),
+         url('./img/iPhone.png') no-repeat center bottom;
+    }
+}
