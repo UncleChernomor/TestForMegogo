@@ -10,3 +10,6 @@ Test Project for Megogo
   ## Installation
   Use VSC with plugins LiveServer and  LiveSassCompiler
   Execute index.html
+
+  ## Contact
+  vadym.blyzynskyi@gmail.com
